@@ -44,6 +44,8 @@ body{
   border-radius: 50px;
   padding: 20px 70px;
 }
+/* こんなお悩みありませんか？
+-------------------------------*/
 .worries.container{
   background-color: white;
   border: solid 3px rgb(148, 243, 255);
@@ -71,4 +73,16 @@ li::after{
   border-left: 2px solid #e3844d;
   border-bottom:2px solid #e3844d ;
   transform: rolate(-45deg);
+}
+/* サービス内容
+---------------------------------*/
+.sec.service{
+  background-color: #e3f7fb;
+}
+.hp{
+  background-image: url(../image/cord.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
 }
