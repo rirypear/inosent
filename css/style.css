@@ -5,11 +5,24 @@ body{
   width: 375px;
 }
 .sec{
+  text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.txt{
+  text-align: center;
 }
 .ttl{
   text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
 }
+.container{
+  background-color: white;
+  border: solid 3px #83c5d3;
+}
+
 /* header
 -------------------*/
 
@@ -31,10 +44,14 @@ body{
   left: 0px;
 }
 .header.txt{
+  width: 200px;
   color: white;
-  position: relative;
+  line-height: 2rem;
+  position: absolute;
   top:50%;
-  left:50%;
+  left:20%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
 .button{
   margin-top: 50px;
@@ -46,43 +63,186 @@ body{
 }
 /* こんなお悩みありませんか？
 -------------------------------*/
+.worries.bg{
+  background-image:url(../image/pc.png);
+  height: 200px;
+  background-size: 200%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
 .worries.container{
-  background-color: white;
-  border: solid 3px rgb(148, 243, 255);
   padding: 20px 10px;
+  position: absolute;
+  top: 55%;
+  left: 5%;
 }
 .worries.ttl{
   margin-bottom: 20px;
 }
 ul{
+  text-align: left;
+  margin: 0 5px;
   font-size: 10px;
-  line-height: 1.375rem;
+  line-height: 2rem;
   list-style-type: none;
 }
 li{
-  position: relative;
+  font-size: 9px;
+  width: 300px;
 }
-li::after{
-  content: '';
-  display: block;
-  position: absolute;
-  top: .5em;
-  left: -1.5em;
-  width: 10px;
-  height: 5px;
-  border-left: 2px solid #e3844d;
-  border-bottom:2px solid #e3844d ;
-  transform: rolate(-45deg);
+.li.mark{
+  max-width: 15px;
+  margin-right: 10px;
 }
+
 /* サービス内容
 ---------------------------------*/
+.box{
+  background-color: white;
+  border: solid 3px #83c5d3;
+  padding: 20px 60px;
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+.number{
+  color:#83c5d3 ;
+  font-size: 30px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
 .sec.service{
   background-color: #e3f7fb;
+  margin-top: 100px;
 }
-.hp{
-  background-image: url(../image/cord.png);
+.img{
   background-size: 100%;
   background-repeat: no-repeat;
   height: 300px;
   position: relative;
 }
+.hp.img{
+  background-image: url(../image/cord.png);
+}
+.hp.box{
+}
+.lp.img{
+  background-image: url(../image/lp.png);
+}
+.graphic.img{
+  background-image: url(../image/design.png);
+}
+.graphic.box{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+/* 準備していただくもの
+---------------------------*/
+.sec.prepara{
+  text-align: center;
+  margin: 0 auto;
+}
+.box2{
+  text-align: center;
+  width: 200px;
+  height: 180px;
+  background-color: #74cde1;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.number2{
+  color: white;
+  font-size: 50px;
+}
+.prepara.txt{
+  color: white;
+  text-align: left;
+  width: 180px;
+  margin-top: 50px;
+}
+/*　料金
+---------------------*/
+.sec.price{
+  background-color: #74cde1;
+  margin: 0px;
+  padding: 50px;
+}
+.price.ttl{
+  color: white;
+}
+/*よくある質問
+--------------------*/
+.question.ttl{
+  background-color: #74cde1;
+  color: white;
+  padding: 20px 20px;
+
+}
+.question.bg{
+  background-image: url(../image/QA-04.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+/* お問い合わせ
+-----------------------*/
+.sec.inquiry{
+  background-color: #e3f7fb;
+  text-align: left;
+}
+form div{
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+label{
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  background: white;
+  border: 1px #74cde1 solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  max-width: 300px;
+}
+textarea{
+  width: 100%;
+  max-width: 300px;
+  height: 6rem;
+}
+input[type="submit"]{
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.form.button{
+  margin-left: 100px;
+}
+.footer{
+  background-color: #74cde1;
+  padding: 20px;
+  color: white;
+  font-size: 14px;
+}
+.footer.txt2{
+  font-size: 16px;
+  text-align: center;
+  padding-top: 0px;
+}
+
