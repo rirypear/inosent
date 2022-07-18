@@ -1,14 +1,21 @@
 @charset "utf-8";
 /* 共通項目　
 -------------------- */
+html{
+  font-size: 100%;
+}
 body{
-  width: 375px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
 }
 .sec{
   text-align: center;
+  margin: 0 auto;
+}
+.sec{
+  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 50px;
 }
 .txt{
   text-align: center;
@@ -16,11 +23,30 @@ body{
 .ttl{
   text-align: center;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 24px;
 }
 .container{
   background-color: white;
-  border: solid 3px #83c5d3;
+  border: solid 8px #83c5d3;
+}
+p{
+  font-size: 16px;
+  line-height: 1.375rem;
+}
+.bg{
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.wrapper{
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+.clear{
+  clear: both;
 }
 
 /* header
@@ -28,54 +54,50 @@ body{
 
 .header{
   text-align: center;
+  margin: 0 auto;
 }
 .header.bg{
   background-image: url(../image/fv.png);
-  background-repeat: no-repeat;
-  height: 300px;
-  background-size: 200%;
-  background-position: 50% 50%;
-  position: relative;
 }
 .logo{
   max-width: 200px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 3%;
+  left: 2%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
 .header.txt{
-  width: 200px;
+  font-size: 150%;
   color: white;
   line-height: 2rem;
   position: absolute;
   top:50%;
-  left:20%;
+  left:30%;
   transform: translateX(-50%);
   transform: translateY(-50%);
 }
 .button{
-  margin-top: 50px;
+  display: block;
+  width: 150px;
+  margin-top: 100px;
   font-size: 16px;
   background: #e3844d;
   color: white;
   border-radius: 50px;
-  padding: 20px 70px;
+  padding: 30px 100px;
 }
 /* こんなお悩みありませんか？
 -------------------------------*/
+
 .worries.bg{
   background-image:url(../image/pc.png);
-  height: 200px;
-  background-size: 200%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: relative;
 }
 .worries.container{
-  padding: 20px 10px;
+  padding: 20px 20px;
   position: absolute;
-  top: 55%;
-  left: 5%;
+  top: 60%;
+  left: 25%;
 }
 .worries.ttl{
   margin-bottom: 20px;
@@ -83,12 +105,11 @@ body{
 ul{
   text-align: left;
   margin: 0 5px;
-  font-size: 10px;
+  font-size: 100%;
   line-height: 2rem;
   list-style-type: none;
 }
 li{
-  font-size: 9px;
   width: 300px;
 }
 .li.mark{
@@ -100,131 +121,203 @@ li{
 ---------------------------------*/
 .box{
   background-color: white;
-  border: solid 3px #83c5d3;
-  padding: 20px 60px;
+  border: solid 5px #83c5d3;
+  padding: 20px 50px;
   position: absolute;
-  top: 40%;
-  left: 22%;
   transform: translateX(-50%);
   transform: translateY(-50%);
 }
 .number{
   color:#83c5d3 ;
-  font-size: 30px;
+  font-size: 50px;
   position: absolute;
-  top: 25%;
-  left: 25%;
-}
-.sec.service{
-  background-color: #e3f7fb;
-  margin-top: 100px;
-}
-.img{
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 300px;
-  position: relative;
-}
-.hp.img{
-  background-image: url(../image/cord.png);
-}
-.hp.box{
-}
-.lp.img{
-  background-image: url(../image/lp.png);
-}
-.graphic.img{
-  background-image: url(../image/design.png);
-}
-.graphic.box{
-  position: absolute;
-  top: 40%;
-  left: 15%;
+  top: -20%;
+  left: 10%;
   transform: translateX(-50%);
   transform: translateY(-50%);
 }
+.sec.service{
+  background-color: #e3f7fb;
+  margin-top: 150px;
+  padding-top: 50px;
+  padding-bottom:50px ;
+  height: 1000px;
+  position: relative;
+}
+.img{
+  max-width: 100%;
+  margin-top: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 250px;
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+.hp.img{
+  background-image: url(../image/cord.png);
+  top: 20%;
+  right: 10%;
+}
+.lp.img{
+  background-image: url(../image/lp.png);
+  top: 45%;
+  left: 10%;
+}
+.graphic.img{
+  background-image: url(../image/design.png);
+  right: 10%;
+  top: 70%;
+}
+.hp.box{
+  top: 45%;
+  left: -30%;
+}
+.lp.box{
+  top: 60%;
+  right: -20%;
+}
+.graphic.box{
+  left: -30%;
+  top: 60%;
+}
+
+.service.txt{
+  position: absolute;
+  bottom:5%;
+  left: 35%;
+}
 /* 準備していただくもの
 ---------------------------*/
-.sec.prepara{
-  text-align: center;
-  margin: 0 auto;
+.f-left{
+  float: left;
 }
+
 .box2{
-  text-align: center;
   width: 200px;
-  height: 180px;
+  height: 200px;
   background-color: #74cde1;
-  padding: 10px;
+  border-radius: 10px;
+  margin-left:50px;
+  display: block;
   margin-bottom: 50px;
 }
 .number2{
-  color: white;
   font-size: 50px;
-}
-.prepara.txt{
   color: white;
-  text-align: left;
-  width: 180px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
+.txt2{
+  margin-top: 20px;
+  color: white;
+  line-height: 1.375rem;
+}
+
 /*　料金
 ---------------------*/
 .sec.price{
   background-color: #74cde1;
-  margin: 0px;
-  padding: 50px;
 }
 .price.ttl{
   color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+.price.button2{
+  max-width: 300px;
+}
+/* ご依頼の流れ
+--------------------*/
+.flow.illust{
+  padding: 20px 5px;
+  max-width: 600px;
 }
 /*よくある質問
 --------------------*/
 .question.ttl{
-  background-color: #74cde1;
+  background-image: url(../image/よくある質問.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 100px;
   color: white;
   padding: 20px 20px;
 
 }
 .question.bg{
-  background-image: url(../image/QA-04.png);
-  background-position: center;
-  background-size: 100%;
+  background-image: url(../image/QA-SP.png);
+  background-position: 0% 50%;
+  background-size: 60%;
   background-repeat: no-repeat;
   height: 600px;
 }
+/*パソコンで見た時はpcのclassがついた画像が表示 */
+.pc{
+  display: block !important;
+  text-align: center;
+}
+.sp{
+  display: none !important;
+  text-align: center;
+}
+.pc2{
+  display: block !important;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.pc2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sp2{
+  display: none !important;
+  text-align: center;
+}
+
+
 /* お問い合わせ
 -----------------------*/
+form{
+  width: 500px;
+  text-align: left;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
 .sec.inquiry{
   background-color: #e3f7fb;
   text-align: left;
+  padding-bottom: 50px;
 }
 form div{
-  margin-bottom: 20px;
-  padding-left: 20px;
+  margin-bottom: 50px;
 }
 label{
-  font-size: 0.7rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: block;
 }
 input[type="text"],
 input[type="email"],
+input[type="phonenumber"],
 textarea{
   background: white;
   border: 1px #74cde1 solid;
   border-radius: 5px;
-  padding: 5px;
-  font-size: 1rem;
+  padding: 10px;
 }
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+input[type="phonenumber"]{
   width: 100%;
-  max-width: 300px;
+  max-width: 700px;
 }
 textarea{
   width: 100%;
-  max-width: 300px;
-  height: 6rem;
+  max-width: 700px;
+  height: 3rem;
 }
 input[type="submit"]{
   border: none;
@@ -232,17 +325,82 @@ input[type="submit"]{
   line-height: 1;
 }
 .form.button{
-  margin-left: 100px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  margin-top: 0px;
+  font-size: 16px;
+  background: #e3844d;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 50px;
+  
 }
 .footer{
   background-color: #74cde1;
   padding: 20px;
   color: white;
-  font-size: 14px;
 }
 .footer.txt2{
-  font-size: 16px;
   text-align: center;
   padding-top: 0px;
+}
+@media (max-width:600px){
+  .header.txt{
+    position: absolute;
+    left: 10%;
+  }
+  .worries.container{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+  }
+  .pc{
+    display: none !important;
+  }
+  .sp{
+    display: block !important;
+  }
+  .pc2{
+    display: none !important;
+  }
+  .sp2{
+    display: block !important;
+  }
+
+  .flow.illust{
+    max-width: 400px;
+  }
+  .box2{
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+  }
+  .box2{
+    margin-bottom: 50px;
+  }
+  .input[type="text"],
+  input[type="email"],
+  input[type="phonenumber"]{
+    width: 100%;
+    max-width: 300px;
+  }
+  .hp.box{
+    top: 50%;
+    left: 25%;
+  }
+  .lp.box{
+    top: 50%;
+    right: 30%;
+  }
+  .graphic.box{
+    left: 20%;
+    top: 50%;
+  }
+  
+  
+
+
 }
 
